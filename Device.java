@@ -9,12 +9,13 @@ import java.util.Date;
  *
  */
 public abstract class Device {
-	double price;
-	String serialNumber;
-	String manufacturer;
-	Date productionDate;
-	String markerAR;
-	String deviceType;
+	
+	protected double price;
+	protected String serialNumber;
+	protected String manufacturer;
+	protected Date productionDate;
+	protected String markerAR;
+	protected String deviceType;
 	
 	
 	public double getPrice() {
@@ -69,5 +70,4 @@ public abstract class Device {
 	public abstract void browseInInternet(String url);
 	public abstract void playVideo(String fileName);
 	public abstract void moveDeviceTo(int PosX, int PosY);
-	
 }
