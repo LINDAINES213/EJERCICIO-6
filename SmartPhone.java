@@ -1,7 +1,7 @@
 /**
  * 
  */
-package org.arapp.model;
+//package org.arapp.model;
 
 /**
  * @author moises.alonso

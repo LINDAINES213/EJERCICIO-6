@@ -1,7 +1,6 @@
 /**
  * 
  */
-package org.arapp.model;
 
 import java.util.Date;
 

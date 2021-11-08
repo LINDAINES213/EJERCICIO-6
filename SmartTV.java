@@ -1,9 +1,9 @@
 /**
  * 
  */
-package org.arapp.model;
+//package org.arapp.model;
 
-import sun.reflect.generics.reflectiveObjects.NotImplementedException;
+//import sun.reflect.generics.reflectiveObjects.NotImplementedException;
 
 /**
  * @author moises.alonso
@@ -14,13 +14,13 @@ public class SmartTV extends Device {
 	@Override
 	public void makePhoneCall(int phoneNumber) {
 		// TODO Auto-generated method stub
-		throw new NotImplementedException();
+		//throw new NotImplementedException();
 	}
 
 	@Override
 	public void takePic() {
 		// TODO Auto-generated method stub
-		throw new NotImplementedException();
+		//throw new NotImplementedException();
 	}
 
 	@Override
