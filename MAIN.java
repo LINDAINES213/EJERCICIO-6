@@ -25,6 +25,11 @@ public class MAIN {
         int opcion2 = 0;
         int opcion3 = 0;
         int opcion4 = 0;
+        int opcion5 = 0;
+        int opcion6 = 0;
+        int opcion7 = 0;
+        int opcion8 = 0;
+        String s = "";
         
         /**
          * Esta clase es el controlador del programa.
@@ -49,11 +54,51 @@ public class MAIN {
                     }
                 } else if (opcion2 == 2){
 
+                    opcion4 = vista.smartPhone();
+
+                    if (opcion4 == 1){
+                        sp.makePhoneCall(opcion4);
+                    } else if (opcion4 == 2){
+                        sp.takePic();
+                    } else if (opcion4 == 3){
+                        sp.browseInInternet(s);
+                    } else if (opcion4 == 4){
+                        sp.playVideo(s);
+                    }
+
                 } else if (opcion2 == 3){
-                
+
+                    opcion5 = vista.Cam();
+
+                    if (opcion5 == 1){
+                        cam.takePic();
+                    } else if (opcion5 == 2){
+                        cam.playVideo(s);
+                    }
+                    
                 } else if (opcion2 == 4){
 
+                    opcion6 = vista.Desktop();
+
+                    if (opcion6 == 1){
+                        d.browseInInternet(s);
+                    } else if (opcion6 == 2){
+                        d.playVideo(s);
+                    } else if (opcion6 == 3){
+                        d.VideoGames();
+                    }
+
                 } else if (opcion2 == 5){
+
+                    opcion7 = vista.Laptop();
+
+                    if (opcion6 == 1){
+                        lap.browseInInternet(s);
+                    } else if (opcion6 == 2){
+                        d.playVideo(s);
+                    } else if (opcion6 == 3){
+                        d.VideoGames();
+                    }
                 
                 } else if (opcion2 == 6){
 

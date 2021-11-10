@@ -131,6 +131,51 @@ public class Vista {
         return opcion7;
     }
 
+    public int SmartTV(){
+        
+        int opcion8;
+
+        String tv = "\nQue desea realizar?\n" +
+                    "1. Navegar por Internet\n" +
+                    "2. Reproducir Videos\n" +
+                    "3. Ejecitar Videojuegos";
+        
+        System.out.println(tv);
+        opcion8 = sn.nextInt();
+
+        return opcion8;
+    }
+
+    public int Tablet(){
+
+        int opcion9;
+
+        String tv = "\nQue desea realizar?\n" +
+                    "1. Navegar por Internet\n" +
+                    "2. Reproducir Videos\n" +
+                    "3. Ejecitar Videojuegos";
+        
+        System.out.println(tv);
+        opcion9 = sn.nextInt();
+
+        return opcion9;
+    }
+
+    public int Smartwatch(){
+        
+        int opcion8;
+
+        String tv = "\nQue desea realizar?\n" +
+                    "1. Navegar por Internet\n" +
+                    "2. Reproducir Videos\n" +
+                    "3. Ejecitar Videojuegos";
+        
+        System.out.println(tv);
+        opcion8 = sn.nextInt();
+
+        return opcion8;
+    }
+
     /**
      * Metodo para imprimir las tiendas disponibles.
      */

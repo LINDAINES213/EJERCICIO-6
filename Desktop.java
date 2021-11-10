@@ -34,4 +34,8 @@ public class Desktop extends Device{
 	public void playVideo(String fileName) { //Método para reproducir videos.
 		System.out.println("Video reproduciéndose");
 	}
+
+	public void VideoGames(){
+        System.out.println("Jugando al buscaminas...");
+    }
 }
