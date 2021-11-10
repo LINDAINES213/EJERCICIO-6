@@ -13,7 +13,19 @@ import java.util.Scanner;
 public class SmartTV extends Device {
 
 	Scanner scan = new Scanner(System.in);
-	
+
+	@Override
+	public void makePhoneCall(int phoneNumber) {
+		// TODO Auto-generated method stub
+		//throw new NotImplementedException();
+	}
+
+	@Override
+	public void takePic() {
+		// TODO Auto-generated method stub
+		//throw new NotImplementedException();
+	}
+
 	@Override
 	public void browseInInternet(String url) {
 		System.out.println("Ingrese la url de la página que desea ingresar.");
