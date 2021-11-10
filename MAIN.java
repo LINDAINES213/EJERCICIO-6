@@ -3,6 +3,23 @@ public class MAIN {
      
         //Objeto tipo vista
         Vista vista = new Vista();
+        //Objeto tipo camara
+        Camara cam = new Camara();
+        //Objeto tipo desktop
+        Desktop d = new Desktop();
+        //Objeto tipo fijo
+        Fijo fijo = new Fijo();
+        //Objeto tipo laptop
+        Laptop lap = new Laptop();
+        //Objeto tipo smartphone
+        SmartPhone sp = new SmartPhone();
+        //Objeto tipo smartTV
+        SmartTV tv = new SmartTV();
+        //Objeto tipo smartwatch
+        SmartWatch sw = new SmartWatch();
+        //Objeto tipo tabet
+        Tablet tab = new Tablet();
+    
 
         int opcion = 0;
         int opcion2 = 0;
@@ -23,6 +40,26 @@ public class MAIN {
                 opcion2 = vista.menuDispositivo();
 
                 if (opcion2 == 1){
+
+                    opcion3 = vista.telefonoF();
+
+                    if (opcion3 == 1){
+                        
+                        fijo.makePhoneCall(opcion3);
+                    }
+                } else if (opcion2 == 2){
+
+                } else if (opcion2 == 3){
+                
+                } else if (opcion2 == 4){
+
+                } else if (opcion2 == 5){
+                
+                } else if (opcion2 == 6){
+
+                } else if (opcion2 == 7){
+
+                } else if (opcion2 == 8){
 
                 }
 

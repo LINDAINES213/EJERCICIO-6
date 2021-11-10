@@ -1,29 +1,12 @@
 import java.util.Scanner;
-import java.io.File;
-import java.io.FileNotFoundException;
-import java.io.FileOutputStream;
 import java.io.FileReader;
 import java.io.IOException;
-import java.io.PrintStream;
 import java.io.BufferedReader;
-import java.util.NoSuchElementException;
 
 public class Vista {
     
     //Objeto tipo scanner
     Scanner sn = new Scanner(System.in);
-    //Objeto tipo enemigo
-    Camara cam = new Camara();
-    //Objeto tipo jefe
-    Desktop d = new Desktop();
-    //Objeto tipo guerrero
-    Fijo fijo = new Fijo();
-    //Objeto tipo explorador
-    Laptop lap = new Laptop();
-    SmartPhone sp = new SmartPhone();
-    SmartTV tv = new SmartTV();
-    SmartWatch sw = new SmartWatch();
-    Tablet tab = new Tablet();
     
     /**
      * Metodo para imprimir el menu principal
@@ -53,9 +36,7 @@ public class Vista {
     }
 
     /**
-     * Metodo para imprimir el menu para hacer una publicacion
-     * @author: Linda Ines Jimenez Vides
-     * @version: 2 - noviembre - 2021
+     * Metodo para imprimir el menu para elegir un dispositivo
      */
     public int menuDispositivo(){
         
@@ -63,14 +44,13 @@ public class Vista {
 
         String menuDispositivo = "\nQue dispositivo desea probar?\n" +
                                 "1. Telefono Fijo\n" +
-                                "2. Telefono Celular\n" +
-                                "3. Smartphone\n" +
-                                "4. Camara Fotografica\n" +
-                                "5. Computadora Desktop\n" +
-                                "6. Laptop\n" +
-                                "7. SmartTV\n" +
-                                "8. Smartwatch\n" +
-                                "9. Tablet\n";
+                                "2. Smartphone\n" +
+                                "3. Camara Fotografica\n" +
+                                "4. Computadora Desktop\n" +
+                                "5. Laptop\n" +
+                                "6. SmartTV\n" +
+                                "7. Smartwatch\n" +
+                                "8. Tablet\n";
         
         System.out.println(menuDispositivo);
         opcion2 = sn.nextInt();
@@ -78,23 +58,97 @@ public class Vista {
         return opcion2;
     }
 
+    public int telefonoF(){
+        
+        int opcion3;
+
+        String telF = "\nQue desea realizar?\n" +
+                                "1. Llamar\n";
+        
+        System.out.println(telF);
+        opcion3 = sn.nextInt();
+
+        return opcion3;
+    }
+
+    public int smartPhone(){
+        
+        int opcion4;
+
+        String smp = "\nQue desea realizar?\n" +
+                        "1. Llamar\n" +
+                        "2. Tomar Fotografia\n" +
+                        "3. Navegar por Internet\n" +
+                        "4. Reproducir Videos\n";
+        
+        System.out.println(smp);
+        opcion4 = sn.nextInt();
+
+        return opcion4;
+    }
+
+    public int Cam(){
+        
+        int opcion5;
+
+        String cam = "\nQue desea realizar?\n" +
+                        "1. Tomar Fotografia\n" +
+                        "2. Reproducir Videos\n";
+        
+        System.out.println(cam);
+        opcion5 = sn.nextInt();
+
+        return opcion5;
+    }
+
+    public int Desktop(){
+        
+        int opcion6;
+
+        String ds = "\nQue desea realizar?\n" +
+                        "1. Navegar por Internet\n" +
+                        "2. Reproducir Videos\n" +
+                        "3. Ejecitar Videojuegos";
+        
+        System.out.println(ds);
+        opcion6 = sn.nextInt();
+
+        return opcion6;
+    }
+
+    public int Laptop(){
+        
+        int opcion7;
+
+        String lp = "\nQue desea realizar?\n" +
+                    "1. Navegar por Internet\n" +
+                    "2. Reproducir Videos\n" +
+                    "3. Ejecitar Videojuegos";
+        
+        System.out.println(lp);
+        opcion7 = sn.nextInt();
+
+        return opcion7;
+    }
+
+    /**
+     * Metodo para imprimir las tiendas disponibles.
+     */
     public void tiendasD(){
 
         String contenido = " ";
 
         try {
 
+            //Creamos un archivo FileReader que obtiene lo que tenga el archivo
             FileReader leer = new FileReader("Tiendas.txt");
-
             //El contenido de lector se guarda en un BufferedReader
             BufferedReader tiendas = new BufferedReader(leer);
-
-            //Con el siguiente ciclo extraemos todo el contenido del objeto "contenido" y lo mostramos
-            //Con el siguiente ciclo extraemos todo el contenido del objeto "contenido" y lo mostramos
+            //Con el siguiente ciclo extraemos todo el contenido del archivo y se muestra
             while((contenido = tiendas.readLine()) != null) {
-            System.out.println(contenido);
-            //System.out.println("\n---------------- PUBLICADO ----------------\n");
+            System.out.println("\n" + contenido);
             }   
+
         } catch (IOException e) {
             System.out.println("\nERROR EN LA CARGA DE TIENDAS DISPONIBLES! INTENTE DE NUEVO\n");
         }
