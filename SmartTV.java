@@ -34,11 +34,4 @@ public class SmartTV extends Device {
 		// TODO Auto-generated method stub
 
 	}
-
-	@Override
-	public void moveDeviceTo(int PosX, int PosY) {
-		// TODO Auto-generated method stub
-
-	}
-
 }
