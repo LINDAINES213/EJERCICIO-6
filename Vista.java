@@ -3,6 +3,7 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.FileReader;
+import java.io.IOException;
 import java.io.PrintStream;
 import java.io.BufferedReader;
 import java.util.NoSuchElementException;
@@ -64,12 +65,12 @@ public class Vista {
                                 "1. Telefono Fijo\n" +
                                 "2. Telefono Celular\n" +
                                 "3. Smartphone\n" +
-                                "1. Camara Fotografica\n" +
-                                "2. Computadora Desktop\n" +
-                                "3. Laptop\n" +
-                                "1. SmartTV\n" +
-                                "2. Smartwatch\n" +
-                                "3. Tablet\n";
+                                "4. Camara Fotografica\n" +
+                                "5. Computadora Desktop\n" +
+                                "6. Laptop\n" +
+                                "7. SmartTV\n" +
+                                "8. Smartwatch\n" +
+                                "9. Tablet\n";
         
         System.out.println(menuDispositivo);
         opcion2 = sn.nextInt();
@@ -79,14 +80,22 @@ public class Vista {
 
     public void tiendasD(){
 
+        String contenido = " ";
+
         try {
 
-            String contenido = " ";
             FileReader leer = new FileReader("Tiendas.txt");
-            BufferedReader TIENDAS = new BufferedReader(leer);
-            System.out.println(contenido);
 
-        } catch (FileNotFoundException e) {
+            //El contenido de lector se guarda en un BufferedReader
+            BufferedReader tiendas = new BufferedReader(leer);
+
+            //Con el siguiente ciclo extraemos todo el contenido del objeto "contenido" y lo mostramos
+            //Con el siguiente ciclo extraemos todo el contenido del objeto "contenido" y lo mostramos
+            while((contenido = tiendas.readLine()) != null) {
+            System.out.println(contenido);
+            //System.out.println("\n---------------- PUBLICADO ----------------\n");
+            }   
+        } catch (IOException e) {
             System.out.println("\nERROR EN LA CARGA DE TIENDAS DISPONIBLES! INTENTE DE NUEVO\n");
         }
     }
