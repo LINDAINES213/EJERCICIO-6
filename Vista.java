@@ -3,6 +3,12 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.io.BufferedReader;
 
+/**
+ * Esta clase es la vista del programa.
+ * @author: Linda Ines Jimenez Vides && Mario Mario Antonio Guerra Morales
+ * @version: 9 - noviembre - 2021
+ */
+
 public class Vista {
     
     //Objeto tipo scanner
@@ -26,8 +32,7 @@ public class Vista {
 
         String menuPrincipal = "\n1. Probar un dispositivo\n" +
                                 "2. Ver Tiendas Físicas\n" +
-                                "3. Comprar un dispositivo\n" +
-                                "4. Salir de la pagina\n";
+                                "3. Salir de la pagina\n";
 
         System.out.println(menuPrincipal);
         opcion =  sn.nextInt();
@@ -58,6 +63,9 @@ public class Vista {
         return opcion2;
     }
 
+    /**
+     * Metodo para probar el telefono fijo
+     */
     public int telefonoF(){
         
         int opcion3;
@@ -71,6 +79,9 @@ public class Vista {
         return opcion3;
     }
 
+    /**
+     * Metodo para probar el smartphone
+     */
     public int smartPhone(){
         
         int opcion4;
@@ -87,6 +98,9 @@ public class Vista {
         return opcion4;
     }
 
+    /**
+     * Metodo para probar la camara
+     */
     public int Cam(){
         
         int opcion5;
@@ -101,6 +115,9 @@ public class Vista {
         return opcion5;
     }
 
+    /**
+     * Metodo para probar la computadora desktop
+     */
     public int Desktop(){
         
         int opcion6;
@@ -116,6 +133,9 @@ public class Vista {
         return opcion6;
     }
 
+    /**
+     * Metodo para probar la computadora laptop
+     */
     public int Laptop(){
         
         int opcion7;
@@ -131,14 +151,16 @@ public class Vista {
         return opcion7;
     }
 
+    /**
+     * Metodo para probar el SmartTV
+     */
     public int SmartTV(){
         
         int opcion8;
 
         String tv = "\nQue desea realizar?\n" +
                     "1. Navegar por Internet\n" +
-                    "2. Reproducir Videos\n" +
-                    "3. Ejecitar Videojuegos";
+                    "2. Reproducir Videos\n";
         
         System.out.println(tv);
         opcion8 = sn.nextInt();
@@ -146,34 +168,39 @@ public class Vista {
         return opcion8;
     }
 
+    /**
+     * Metodo para probar la tablet
+     */
     public int Tablet(){
 
         int opcion9;
 
-        String tv = "\nQue desea realizar?\n" +
-                    "1. Navegar por Internet\n" +
-                    "2. Reproducir Videos\n" +
-                    "3. Ejecitar Videojuegos";
+        String tb = "\nQue desea realizar?\n" +
+                    "1. Tomar Fotografia\n" +
+                    "2. Navegar por Internet\n" +
+                    "3. Reproducir Videos\n";
         
-        System.out.println(tv);
+        System.out.println(tb);
         opcion9 = sn.nextInt();
 
         return opcion9;
     }
 
+    /**
+     * Metodo para probar el Smartwatch
+     */
     public int Smartwatch(){
         
-        int opcion8;
+        int opcion10;
 
-        String tv = "\nQue desea realizar?\n" +
-                    "1. Navegar por Internet\n" +
-                    "2. Reproducir Videos\n" +
-                    "3. Ejecitar Videojuegos";
+        String st = "\nQue desea realizar?\n" +
+                    "1. Llamar\n" +
+                    "2. Tomar Fotografia\n";
         
-        System.out.println(tv);
-        opcion8 = sn.nextInt();
+        System.out.println(st);
+        opcion10 = sn.nextInt();
 
-        return opcion8;
+        return opcion10;
     }
 
     /**

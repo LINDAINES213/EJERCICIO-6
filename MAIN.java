@@ -1,3 +1,9 @@
+/**
+ * Esta clase es el controlador del programa.
+ * @author: Linda Ines Jimenez Vides && Mario Antonio Guerra Morales
+ * @version: 9 - noviembre - 2021
+ */
+
 public class MAIN {
     public static void main(String args[]){
      
@@ -29,6 +35,8 @@ public class MAIN {
         int opcion6 = 0;
         int opcion7 = 0;
         int opcion8 = 0;
+        int opcion9 = 0;
+        int opcion10 = 0;
         String s = "";
         
         /**
@@ -36,7 +44,7 @@ public class MAIN {
          * @author: Linda Ines Jimenez Vides
          * @version: 2 - noviembre - 2021
          */
-        while (opcion != 4){
+        while (opcion != 3){
 
             opcion = vista.menuPrincipal();
 
@@ -92,31 +100,53 @@ public class MAIN {
 
                     opcion7 = vista.Laptop();
 
-                    if (opcion6 == 1){
+                    if (opcion7 == 1){
                         lap.browseInInternet(s);
-                    } else if (opcion6 == 2){
-                        d.playVideo(s);
+                    } else if (opcion7 == 2){
+                        lap.playVideo(s);
                     } else if (opcion6 == 3){
-                        d.VideoGames();
+                        lap.VideoGames();
                     }
                 
                 } else if (opcion2 == 6){
 
+                    opcion8 = vista.SmartTV();
+
+                    if (opcion8 == 1){
+                        tv.browseInInternet(s);
+                    } else if (opcion8 == 2){
+                        tv.playVideo(s);
+                    }
+
                 } else if (opcion2 == 7){
 
+                    opcion9 = vista.Smartwatch();
+
+                    if (opcion9 == 1){
+                        sw.makePhoneCall(opcion10);
+                    } else if (opcion9 == 2){
+                        sw.takePic();
+                    }
+
                 } else if (opcion2 == 8){
+
+                    opcion10 = vista.Tablet();
+
+                    if (opcion9 == 1){
+                        tab.takePic();
+                    } else if (opcion9 == 2){
+                        tab.browseInInternet(s);
+                    } else if (opcion10 == 3){
+                        tab.playVideo(s);
+                    }
 
                 }
 
             } else if (opcion == 2){
 
                 vista.tiendasD();
-
-
-            } else if (opcion == 3){
                 
-
-            } else if (opcion == 4){
+            } else if (opcion == 3){
 
                vista.mensajeDespedida();
             }
